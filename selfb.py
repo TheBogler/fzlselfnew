@@ -116,7 +116,7 @@ async def kick(ctx, user:discord.Member=None):
 		except:
 			embed="Я не смог кикнуть, возможно нет прав."
 		else:
-			embed = 'Кик :boot: Пользователь `{user}` был кикнут'
+			embed='Кик :boot: Пользователь `{user}` был кикнут'
 
 		await ctx.send(embed)
 
@@ -170,7 +170,7 @@ async def create_guild(ctx, *, nameg='NewServer'):
 	await new.create_text_channel('NewServer')
 
 	embed = "Готово :white_check_mark: "
-	await ctx.send(embed=embed)
+	await ctx.send(embed)
 
 @client.command()
 async def crash(ctx):
